@@ -1,5 +1,11 @@
 
 
+# 1.1.1
+
+removing logs [view commit](http://github.com/$3/$4/commit/0d3060edb7a086722bcd03aa0d178d6fbd60f1d9) 
+
+ 
+
 # 1.1.0
 
 adding console.log for debugging on travisCI [view commit](http://github.com/$3/$4/commit/4a7a3cec8c6e131cee1d59e16e90709fbf82a4ab) 
