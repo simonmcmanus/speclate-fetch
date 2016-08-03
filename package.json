@@ -5,5 +5,8 @@
   "main": "index.js",
   "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "whatwg-fetch": "^1.0.0"
+  }
 }
