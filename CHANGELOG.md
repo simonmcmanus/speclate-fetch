@@ -1,5 +1,13 @@
 
 
+# 1.2.0
+
+ignore node modules [view commit](http://github.com/$3/$4/commit/a40da4c2028310059cd1bcd80388b18c160f656a) 
+
+using wg-fetch [view commit](http://github.com/$3/$4/commit/5e3a0b7cc6c2dca0d9cbba4c32141c56cb126b7e) 
+
+ 
+
 # 1.1.1
 
 removing logs [view commit](http://github.com/$3/$4/commit/0d3060edb7a086722bcd03aa0d178d6fbd60f1d9) 
