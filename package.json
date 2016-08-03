@@ -1,12 +1,15 @@
 {
-  "name": "speclate-fetch",
-  "version": "1.1.1",
-  "description": "fetch with fs interface",
-  "main": "index.js",
-  "scripts": {},
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "whatwg-fetch": "^1.0.0"
-  }
+    "name": "speclate-fetch",
+    "version": "1.2.0",
+    "description": "fetch with fs interface",
+    "main": "index.js",
+    "scripts": {},
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "whatwg-fetch": "^1.0.0"
+    },
+    "bundledDependencies": [
+        "whatwg-fetch"
+    ]
 }
