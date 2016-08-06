@@ -1,11 +1,8 @@
 'use strict';
 
-
-var fetch = require('whatwg-fetch');
-
+require('whatwg-fetch');
 
 exports.readFile = function(file, options, callback) {
-
     //var url = window.location.origin + '/base/spec/sample' +  file;
     var url = file;
 
