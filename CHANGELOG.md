@@ -1,5 +1,11 @@
 
 
+# 1.3.0
+
+using whatwg-fetch correctly [view commit](http://github.com/$3/$4/commit/aadc261f884ccaa0b027f00afbc94ad4363f82be) 
+
+ 
+
 # 1.2.0
 
 ignore node modules [view commit](http://github.com/$3/$4/commit/a40da4c2028310059cd1bcd80388b18c160f656a) 
