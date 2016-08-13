@@ -12,10 +12,11 @@ exports.readFile = function(file, options, callback) {
     fetch(url, {
         method: 'get'
     }).then(function(response) {
+        if (!response.ok) throw Error(response.statusText);
         return response.text();
     }).then(function(text) {
         callback(null, text);
     }).catch(function(err) {
-        callback(err)
+        console.log(err)
     });
 };
