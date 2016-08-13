@@ -1,5 +1,19 @@
 
 
+# 1.5.0
+
+Update README.md [view commit](http://github.com/$3/$packageName/commit/6e18804f5f2ac756a45cacfc9664f8c782f7c5d1) 
+
+Update README.md [view commit](http://github.com/$3/$packageName/commit/cc528c91c99abc41b55d4f14506298d0c1a5b133) 
+
+rename travis flie [view commit](http://github.com/$3/$packageName/commit/9ab5a7710484e199577aa330aef40898ab3497fb) 
+
+kick travis [view commit](http://github.com/$3/$packageName/commit/ca826cda02aecfd5b515b3de5a563abe96bec4f7) 
+
+adding karma tests [view commit](http://github.com/$3/$packageName/commit/571c6987fc4352cd08de105701b016eabfa8910a) 
+
+ 
+
 # 1.4.0
 
 better error handling [view commit](http://github.com/$3/$packageName/commit/6931a4b7c25f235ecde121583d69c97948e8d116) 
