@@ -1,5 +1,11 @@
 
 
+# 1.4.0
+
+better error handling [view commit](http://github.com/$3/$packageName/commit/6931a4b7c25f235ecde121583d69c97948e8d116) 
+
+ 
+
 # 1.3.0
 
 using whatwg-fetch correctly [view commit](http://github.com/$3/$4/commit/aadc261f884ccaa0b027f00afbc94ad4363f82be) 
