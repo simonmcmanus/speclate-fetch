@@ -1,0 +1,11 @@
+{
+  "name": "speclate-fetch",
+  "version": "1.4.0",
+  "dependencies": {
+    "whatwg-fetch": {
+      "version": "1.0.0",
+      "from": "whatwg-fetch@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz"
+    }
+  }
+}
