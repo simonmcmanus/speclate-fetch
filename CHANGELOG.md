@@ -1,5 +1,11 @@
 
 
+# 1.6.0
+
+if response.ok  not true throw an error and catch it later [view commit](http://github.com/$3/$packageName/commit/de85da2ca5119e049fe00067bcc631aa51fddfdb) 
+
+ 
+
 # 1.5.0
 
 Update README.md [view commit](http://github.com/$3/$packageName/commit/6e18804f5f2ac756a45cacfc9664f8c782f7c5d1) 
