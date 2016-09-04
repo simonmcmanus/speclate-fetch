@@ -1,26 +1,26 @@
 {
-    "name": "speclate-fetch",
-    "version": "1.5.0",
-    "description": "fetch with fs interface",
-    "main": "index.js",
-    "scripts": {
-        "test": "NODE_ENV=test ./node_modules/karma/bin/karma  start  --single-run"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "whatwg-fetch": "^1.0.0"
-    },
-    "bundledDependencies": [
-        "whatwg-fetch"
-    ],
-    "devDependencies": {
-        "browserify": "^13.1.0",
-        "jasmine": "^2.4.1",
-        "karma": "^1.2.0",
-        "karma-browserify": "^5.1.0",
-        "karma-firefox-launcher": "^1.0.0",
-        "karma-jasmine": "^1.0.2",
-        "sinon": "^1.17.5"
-    }
+  "name": "speclate-fetch",
+  "version": "1.6.0",
+  "description": "fetch with fs interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/karma/bin/karma  start  --single-run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "whatwg-fetch": "^1.0.0"
+  },
+  "bundledDependencies": [
+    "whatwg-fetch"
+  ],
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "jasmine": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-browserify": "^5.1.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "sinon": "^1.17.5"
+  }
 }
