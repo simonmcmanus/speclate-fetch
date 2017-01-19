@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "whatwg-fetch": "^1.0.0"
+        "whatwg-fetch": "^2.0.2"
     },
     "bundledDependencies": [
         "whatwg-fetch"
