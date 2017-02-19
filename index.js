@@ -2,8 +2,8 @@
 
 require('whatwg-fetch');
 
-exports.readFile = function(file, options, callback) {
-    var url = file;
+
+var doFetch = function(url, type, callback) {
     fetch(url, {
         method: 'get'
     }).then(function(response) {
@@ -11,11 +11,25 @@ exports.readFile = function(file, options, callback) {
         if (!response.ok) {
             throw Error(response.statusText);
         }
-        return response.text();
+        return response[type]();
     }).then(function(text) {
         callback(null, text);
     }).catch(function(err) {
-        console.log(err, file)
+        console.log(err, url)
         callback(err)
     });
 };
+
+
+exports.readFile = function(file, options, callback) {
+    doFetch(file, 'text', callback)
+};
+
+exports.json = function(file, callback) {
+    doFetch(file, 'json', callback)
+};
+
+exports.text = function(file, callback) {
+    doFetch(file, 'text', callback)
+};
+
