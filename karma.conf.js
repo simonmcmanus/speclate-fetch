@@ -25,7 +25,8 @@ module.exports = function (config) {
     plugins: [
         'karma-jasmine',
         'karma-browserify',
-        'karma-firefox-launcher'
+        'karma-firefox-launcher',
+        'karma-chrome-launcher',
 
     ],
 
@@ -47,9 +48,17 @@ module.exports = function (config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
+    customLaunchers: {
+        Chrome_travis_ci: {
+            base: 'Chrome',
+            flags: ['--no-sandbox']
+        }
+    },
+
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Firefox'],
+
+    browsers: ['Firefox', 'Chrome_travis_ci'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
