@@ -8,12 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "whatwg-fetch": "^1.0.0"
-  },
-  "bundledDependencies": [
-    "whatwg-fetch"
-  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.0",
     "jasmine": "^2.4.1",
