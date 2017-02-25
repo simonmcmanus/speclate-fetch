@@ -20,11 +20,9 @@ function loadXMLDoc(url, callback) {
 }
 
 var noFetch = function(url, callback) {
-    console.log('no fetch', url)
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
 
-        console.log(xmlHttp.readyState, xmlHttp.status)
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             callback(xmlHttp.responseText);
         } else {
@@ -53,7 +51,7 @@ var doFetch = function(url, type, callback) {
     }).then(function(text) {
         callback(null, text);
     }).catch(function(err) {
-        console.log(err, url)
+        console.error(err, url)
         callback(err)
     });
 };
