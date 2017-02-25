@@ -10,13 +10,13 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^13.1.0",
-    "jasmine": "^2.4.1",
-    "karma": "^1.2.0",
-    "karma-browserify": "^5.1.0",
+    "browserify": "14.1.x",
+    "jasmine": "2.5.x",
+    "karma": "1.5.x",
+    "karma-browserify": "5.1.x",
     "karma-chrome-launcher": "^2.0.0",
-    "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
-    "sinon": "^1.17.5"
+    "karma-firefox-launcher": "1.0.x",
+    "karma-jasmine": "1.1.x",
+    "sinon": "1.17.x"
   }
 }
