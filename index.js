@@ -6,7 +6,7 @@ function loadXMLDoc(url, type, callback) {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
            if (xmlhttp.status == 200) {
-               let out = xmlhttp.responseText;
+               var out = xmlhttp.responseText;
                if (type === 'json') {
                 out = JSON.parse(xmlhttp.responseText)
                }
