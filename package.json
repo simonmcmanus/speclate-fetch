@@ -17,6 +17,6 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-firefox-launcher": "1.0.x",
     "karma-jasmine": "1.1.x",
-    "sinon": "1.17.x"
+    "sinon": "~3.1.0"
   }
 }
