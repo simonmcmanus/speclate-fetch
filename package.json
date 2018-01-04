@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "14.1.x",
+    "browserify": "~15.0.0",
     "jasmine": "2.5.x",
     "karma": "1.5.x",
     "karma-browserify": "5.1.x",
