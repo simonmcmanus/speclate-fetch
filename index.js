@@ -1,13 +1,16 @@
 'use strict';
 
 
-function loadXMLDoc(url, callback) {
+function loadXMLDoc(url, type, callback) {
     var xmlhttp = new XMLHttpRequest();
-
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
            if (xmlhttp.status == 200) {
-               callback(null, xmlhttp.responseText)
+               var out = xmlhttp.responseText;
+               if (type === 'json') {
+                out = JSON.parse(xmlhttp.responseText)
+               }
+               callback(null, out)
            }
            else {
                callback(new Error('Not Found'))
@@ -19,27 +22,11 @@ function loadXMLDoc(url, callback) {
     xmlhttp.send();
 }
 
-var noFetch = function(url, callback) {
-    console.log('no fetch', url)
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() {
-
-        console.log(xmlHttp.readyState, xmlHttp.status)
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            callback(xmlHttp.responseText);
-        } else {
-            callback(new Error('Not Found'))
-        }
-
-    }
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send(null);
-}
 
 var doFetch = function(url, type, callback) {
 
-    if(typeof fetch === 'undefined') {
-        return loadXMLDoc(url, callback);
+    if(typeof window.fetch === 'undefined') {
+        return loadXMLDoc(url, type, callback);
     }
 
     fetch(url, {
@@ -53,7 +40,7 @@ var doFetch = function(url, type, callback) {
     }).then(function(text) {
         callback(null, text);
     }).catch(function(err) {
-        console.log(err, url)
+        console.error(err, url)
         callback(err)
     });
 };
